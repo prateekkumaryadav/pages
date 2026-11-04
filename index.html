@@ -3,9 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="A beginner-friendly React task tracker for learning React concepts.">
+  <title>React Learning Task Tracker</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <p>hello</p>
+  <!-- React will replace the contents of this element with the application UI. -->
+  <div id="root"></div>
+
+  <!--
+    React is loaded from a CDN so this project can be hosted directly on
+    GitHub Pages without installing Node.js or running a build command.
+  -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel lets the browser understand JSX while you are learning. -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- type="text/babel" tells Babel to transform this JSX before running it. -->
+  <script type="text/babel" src="./app.jsx"></script>
 </body>
 </html>
